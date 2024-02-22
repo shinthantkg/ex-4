@@ -12,6 +12,7 @@ html {
   box-sizing: inherit;
 }
 
+/* Teacher, this is for the body's radar background thingamajig idk */
 body {
   background: radial-gradient(circle at 50%, #2c2c2c, #191919);
   font-family: "Inter", sans-serif;
@@ -20,10 +21,12 @@ body {
   padding: 0;
 }
 
+/* Teacher, these styles are for the navigation bar using the Flexbox CSS layout System. */
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: 40px;
+  margin-bottom: -150px;
 }
 
 .navbar-item {
@@ -32,12 +35,7 @@ body {
   margin-right: 50px;
 }
 
-.intro {
-  display: flex;
-  justify-content: center;
-  margin-top: 200px;
-}
-
+/* This is to remove the bullet points of all unorderd lists, teacher. */
 ul {
   list-style-type: none;
   padding: 0;
@@ -47,6 +45,15 @@ li {
   margin-bottom: 10px;
 }
 
+/* This is for the part with my picture and like my name and my yeah yes. */
+
+.intro {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+/* This is for my profile, teacher. */
 .profile-container {
   text-align: center;
   padding: 40px 20px 20px 20px;
@@ -60,6 +67,7 @@ h1 {
   font-size: 50px;
 }
 
+/* This is to make all paragraphs and list items font color white, teacher. */
 p,
 li {
   color: #fff;
@@ -72,6 +80,7 @@ li {
   font-size: 25px;
 }
 
+/* This is for the animated gradient border teacher, also I found it on google lol sorry i'm not that talented yet.... */
 .gradient-border {
   --borderWidth: 3px;
   position: relative;
@@ -104,6 +113,7 @@ li {
   background-size: 300% 300%;
 }
 
+/* This is for the gradient looking ahh text, teacher. */
 .gradient-text {
   background: linear-gradient(
     to right,
@@ -115,6 +125,7 @@ li {
   background-clip: text;
 }
 
+/* This is the animation for the gradient border, teacher. Once again, I don't know how to animate in CSS yet so I got this off of google lol. */
 @keyframes animatedgradient {
   0% {
     background-position: 0% 50%;
@@ -127,6 +138,7 @@ li {
   }
 }
 
+/* This is to make the horizontal rule dotted, and yes I got this off of google. */
 hr {
   border: dotted rgb(255, 255, 255) 6px;
   border-bottom: none;
@@ -134,56 +146,13 @@ hr {
   margin: 30px auto;
 }
 
+/* These are the classes for layouts, teacher. Using Flexbox CSS Layout System. */
 .grid {
   display: flex;
   justify-content: space-around;
 }
 
-.projects-grid {
-  display: flex;
-  flex-direction: column;
-  margin: 100px auto;
-}
-
-.projects-row {
-  display: flex;
-  justify-content: space-around;
-}
-
-.project-row-center {
-  display: flex;
-  justify-content: center;
-  margin: 50px auto;
-}
-
-.project-card {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-}
-
-.project-image {
-  border-radius: 10% 10% 0 0;
-  width: 100%;
-}
-
-.project-info {
-  background-color: rgb(23, 23, 23);
-  border-radius: 0 0 10% 10%;
-  text-align: center;
-  width: 100%;
-  padding: 20px;
-}
-
-.project-desc {
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-.project-links {
-  margin-top: 22px;
-}
-
+/* This is for the cards you see in the intro section, teacher. */
 .card {
   background-color: rgba(23, 23, 23, 0.82);
   border-radius: 5%;
@@ -206,6 +175,57 @@ hr {
   color: #f37055;
 }
 
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+}
+
+.projects-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* This is for the second row you see in my projects section which is centered, teacher. */
+.project-row-center {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.project-image {
+  border-radius: 10% 10% 0 0;
+  width: 100%;
+}
+
+/* This is for the container holding all the information of my project, teacher. */
+.project-info {
+  background-color: rgb(23, 23, 23);
+  border-radius: 0 0 10% 10%;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+/* This is for the p tag found in my project card, teacher. */
+.project-desc {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* This is for "View Website" and "View GitHub" hyperlinks, teacher. */
+.project-links {
+  margin-top: 22px;
+}
+
+/* This the contact container, teacher. */
 #cta {
   display: flex;
   justify-content: center;
